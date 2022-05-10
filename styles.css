@@ -1,0 +1,79 @@
+/* any values account for border and padding */
+* {
+    box-sizing: border-box;
+}
+
+/* get rid of default padding in body */
+body {
+    padding: 0;
+    margin: 0;
+}
+
+/* restricts width of entire calculator to 400px */
+.calc {    
+    width: 400px;
+    background-color: black;
+    color: white;
+}
+
+/* ensures value is flushed to the right */
+.screen { 
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: right;
+    padding: 20px 5px;
+}
+
+/* 24.5% to have little black space in between buttons, get rid of default rounded borders and border 
+    itself and change cursor to pointer when hovering over buttons */
+.calc-button {    
+    background-color: #d8d9db;
+    color: black;
+    height: 100px;
+    width: 24.5%;
+    border: none;
+    border-radius: 0;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+/* change to lighter colour when hovering button */
+.calc-button:hover {
+    background-color: #ebebeb;
+}
+
+/* change to darker colour when button is pushed */
+.calc-button:active {
+    background-color: #bbbcbe;
+}
+
+/* orange colour for arithmetic buttons */
+.calc-button:last-child {
+    background-color: #df974c;
+    color: white;
+}
+
+.calc-button:last-child:hover {
+    background-color: #dfb07e;
+}
+
+.calc-button:last-child:active {
+    background-color: #dd8d37;
+}
+
+/* C button */
+.double {
+    width: 49.7%;
+}
+
+/* 0 button */
+.triple {
+    width: 74.8%;
+}
+
+.calc-row {
+    display: flex;
+    align-content: stretch;
+    justify-content: space-between;
+    margin-bottom: 0.5%;
+}
